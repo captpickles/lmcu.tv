@@ -172,6 +172,7 @@ h1 em { color: var(--signal); font-weight: 500; }
 
 footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem max(1.5rem, calc((100vw - var(--max)) / 2)); color: #cad8d1; background: #0d231c; font-size: .8rem; }
 footer p { margin: 0; }
+.footer-links { display: flex; gap: 1.25rem; }
 
 /* Generated interior pages */
 .interior-page .site-header { border-bottom: 1px solid var(--line); }
