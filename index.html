@@ -37,9 +37,9 @@
       </div>
 
       <dl class="corpus-stats" aria-label="Current research corpus">
-        <div><dt>193</dt><dd>reels catalogued</dd></div>
-        <div><dt>187</dt><dd>watched</dd></div>
-        <div><dt>6</dt><dd>unresolved</dd></div>
+        <div><dt data-corpus-count="reels">193</dt><dd>reels catalogued</dd></div>
+        <div><dt data-corpus-count="watched">187</dt><dd>watched</dd></div>
+        <div><dt data-corpus-count="unresolved">6</dt><dd>unresolved</dd></div>
         <div><dt>A–D</dt><dd>evidence graded</dd></div>
       </dl>
       <p class="freshness">Research snapshot: corpus v0.1. Claims below are deliberately narrower than the jokes.</p>
@@ -50,7 +50,7 @@
         <p class="eyebrow">Search the whole corpus</p>
         <h2 id="finder-title">Looking for a particular reel?</h2>
       </div>
-      <p>The overview below is deliberately selective. The full timeline searches all 193 catalogued reels by title, campaign, character, and research note.</p>
+      <p>The overview below is deliberately selective. The full timeline searches all <span data-corpus-count="reels">193</span> catalogued reels by title, campaign, character, and research note.</p>
       <a class="button ink-button" href="timeline/index.html">Search the full timeline →</a>
     </section>
 
@@ -153,8 +153,7 @@
           </div>
         </article>
       </div>
-      <p class="no-results" id="no-results" hidden>No landmark entries match that search. The full corpus will search all 186 reels.</p>
-      <p class="timeline-cta"><a class="button ink-button" href="timeline/index.html">Browse the complete 186-reel chronology →</a></p>
+      <p class="timeline-cta"><a class="button ink-button" href="timeline/index.html">Browse the complete <span data-corpus-count="reels">193</span>-reel chronology →</a></p>
     </section>
 
     <section class="cast" id="cast" aria-labelledby="cast-title">
