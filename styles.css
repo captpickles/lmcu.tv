@@ -110,6 +110,18 @@ h1 em { color: var(--signal); font-weight: 500; }
 .finder input:focus { outline: 3px solid white; outline-offset: 2px; }
 .finder > p { margin: 0; font-size: .78rem; font-weight: 750; }
 
+.recent-reels { max-width: var(--max); margin: 0 auto; padding: 5rem 1.5rem 1rem; }
+.recent-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: end; margin-bottom: 1.5rem; }
+.recent-heading .eyebrow { margin-bottom: .3rem; color: var(--pickle); }
+.recent-heading h2 { margin: 0; font-size: clamp(2.2rem, 4vw, 3.8rem); line-height: .95; }
+.recent-heading > p { max-width: 520px; margin: 0; color: var(--muted); }
+.recent-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .7rem; }
+.recent-link { display: flex; min-height: 8.5rem; padding: 1rem; flex-direction: column; border: 1px solid var(--line); background: var(--card); text-decoration: none; box-shadow: 0 6px 22px rgba(30,61,48,.045); }
+.recent-link:hover, .recent-link:focus-visible { border-color: var(--pickle); transform: translateY(-2px); }
+.recent-link time { color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.recent-link strong { margin-top: auto; font: 500 1.35rem/1.05 Georgia, serif; }
+.recent-link span { margin-top: .35rem; color: var(--pickle); font-size: .72rem; font-weight: 800; }
+
 .chronology, .cast, .method { max-width: var(--max); margin: 0 auto; padding: 7rem 1.5rem; }
 .section-heading { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4rem; margin-bottom: 5rem; }
 .section-heading .eyebrow { grid-column: 1 / -1; color: var(--pickle); }
@@ -244,6 +256,7 @@ tbody th { width: 34%; }
   .hero { min-height: auto; padding-top: 5rem; }
   .corpus-stats { grid-template-columns: repeat(2, 1fr); }
   .finder { margin: 0; grid-template-columns: 1fr; }
+  .recent-heading { grid-template-columns: 1fr; gap: 1rem; }
   .section-heading, .method { grid-template-columns: 1fr; gap: 1.5rem; }
   .section-heading { margin-bottom: 3rem; }
   .timeline::before { left: .45rem; }
